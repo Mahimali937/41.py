@@ -1,0 +1,19 @@
+#Name:Mahim Ali
+#Email:mahim.ali32@myhunter.cuny.edu
+#Date:November 13,2022
+#This program makes a map in Central Park
+
+import folium
+
+mapWorld = folium.Map(location=[40.75, -74.125], zoom_start=3)
+
+
+mapWorld1 = folium.Marker(location=[40.7812, -73.9665], popup= "Central Park")
+mapWorld1.add_to(mapWorld)
+
+mapWorld.save(outfile='nyc_Central_Park.html')
+
+
+
+
+mapWorld
